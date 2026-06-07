@@ -9161,7 +9161,7 @@ export interface NS {
    * ```
    * `bar` in the last example is `"false"` (a string), not `false` (a boolean). `data.bar` is truthy, not falsy.
    */
-  flags(schema: [string, string | number | boolean | string[]][]): { [key: string]: ScriptArg | string[] };
+  flags(schema: [string, string | number | boolean | string[]][]): { [key: string]: ScriptArg | string[], '_': string[] };
 
   /**
    * Share the server's ram with your factions to increase the reputation gain rate of faction work. This boost is
